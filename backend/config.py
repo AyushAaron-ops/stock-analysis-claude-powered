@@ -2,7 +2,7 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    anthropic_api_key: str
+    anthropic_api_key: str = ""
     app_host: str = "0.0.0.0"
     app_port: int = 8000
     cors_origins: list[str] = ["http://localhost:5173", "http://localhost:3000"]
